@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="../../js/dashboardTransition.js"></script>
+    <script src="../../js/dashboardTransitionPFAMSash.js"></script>
     <!--Fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Anton&display=swap"
@@ -44,8 +44,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"></script>
     <div class="dashboard-page">
       <header>
-        <nav>
-          <div class="menu">
+        <nav style="position:fixed ; width: 100%; z-index: 1;" >
+          <div class="menu" >
             <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-reveal"><i class="fas fa-bars"></i> Menu</button>
           </div>
           <div class="messages">
@@ -56,7 +56,7 @@
         </nav>
       </header>
 
-      <div class="dashboard-view">
+      <div class="dashboard-view" style="position:relative; top: 50px;">
 
       </div>
     </div>
@@ -72,11 +72,13 @@
     
 
             <ul>
-              <li class="profile-link">Edit Profile</li>
+              <li class="club-link">Clubs</li>
               <li class="player-link">Players</li>
               <li class="matches-link">Matches</li>
+              <li class="laws-link">Laws</li>
               <li class="note-link">Notifications</li>
-              <li class="buy-link">Payments</li>
+              <li class="jug-link">Jugments</li>
+              <li class="payment-link">Payments</li>
             </ul>
         </div>
       </div>

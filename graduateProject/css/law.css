@@ -48,3 +48,32 @@ button:hover {
   color: #fff;
   box-shadow: 1px 1px 10px 1px #aaa;
 }
+
+.laws_List {
+  margin: auto;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  width: 60%;
+}
+ul li .law_container {
+  font-size: 20px;
+  border-bottom: 1px solid #aaa;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style-type: decimal;
+}
+.options span {
+  cursor: pointer;
+}
+
+.fa-edit {
+  color: gray;
+}
+
+.fa-trash-alt {
+  color: #f50057;
+}

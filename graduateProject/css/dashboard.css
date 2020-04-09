@@ -4,6 +4,10 @@ html {
   margin: 0;
   background-color: #f5f6fa;
 }
+.note-mess {
+  display: flex;
+  align-items: center;
+}
 
 .uk-offcanvas-bar {
   background-color: #fff !important;
@@ -42,16 +46,19 @@ header nav {
   padding: 5px 20px;
 }
 
-header nav .messages a {
+header nav .messages a,
+header nav .notifications a {
   color: #aaa;
   font-size: 20px;
 }
 
-header nav .messages .message-span {
+header nav .messages .message-span,
+header nav .notifications .note-span {
   cursor: pointer;
 }
 
-.message sup {
+.message sup,
+.note sup {
   background-color: firebrick;
   padding: 1px 5px;
   border-radius: 50%;

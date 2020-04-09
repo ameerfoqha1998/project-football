@@ -1,6 +1,8 @@
 $(document).ready(function() {
-  $(".club-link").click(function() {
-    $(".dashboard-view").load("club.html");
+  $(".dashboard-view").load("profile.html");
+  
+  $(".profile-link").click(function() {
+    $(".dashboard-view").load("profile.html");
   });
 
   $(".player-link").click(function() {
@@ -10,18 +12,14 @@ $(document).ready(function() {
   $(".matches-link").click(function() {
     $(".dashboard-view").load("matches.html");
   });
-  $(".laws-link").click(function() {
-    $(".dashboard-view").load("law.html");
-  });
+ 
 
   $(".note-link").click(function() {
     $(".dashboard-view").load("notification.html");
   });
 
-  $(".jug-link").click(function() {
-    $(".dashboard-view").load("judgment.html");
+  $(".payment-link").click(function() {
+    $(".dashboard-view").load("payment.html");
   });
-  $(".buy-link").click(function() {
-    $(".dashboard-view").load("");
-  });
+
 });
