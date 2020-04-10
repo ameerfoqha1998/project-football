@@ -74,3 +74,48 @@ header nav .menu button {
 .dashboard-view {
   height: 100vh;
 }
+.uk-dropdownnote {
+  width: 300px;
+  height: 400px;
+  overflow-y: scroll;
+}
+.note-dropdown h6 span {
+  color: #587ef5;
+}
+.note-payment {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 5px;
+}
+.note-flex {
+  display: flex;
+  align-items: center;
+}
+
+.note-payment .img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  padding: 2px;
+}
+
+.note-payment .info {
+  color: #aaa;
+  margin-left: 5px;
+  font-size: 14px;
+  display: block;
+}
+.note-payment .info .note-name {
+  color: #333;
+  font-weight: bold;
+}
+.note-payment .info .note-money {
+  color: green;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 12px;
+  color: #aaa;
+  text-align: right;
+}

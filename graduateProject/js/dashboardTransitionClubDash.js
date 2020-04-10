@@ -1,25 +1,19 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $(".dashboard-view").load("profile.html");
-  
-  $(".profile-link").click(function() {
+
+  $(".profile-link").click(function () {
     $(".dashboard-view").load("profile.html");
   });
 
-  $(".player-link").click(function() {
+  $(".player-link").click(function () {
     $(".dashboard-view").load("players.html");
   });
 
-  $(".matches-link").click(function() {
+  $(".matches-link").click(function () {
     $(".dashboard-view").load("matches.html");
   });
- 
 
-  $(".note-link").click(function() {
-    $(".dashboard-view").load("notification.html");
-  });
-
-  $(".payment-link").click(function() {
+  $(".payment-link").click(function () {
     $(".dashboard-view").load("payment.html");
   });
-
 });

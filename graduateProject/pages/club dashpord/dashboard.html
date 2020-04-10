@@ -55,17 +55,116 @@
               <label class="message-span">
                   <i class="fas fa-envelope message" id="message"><sup>3</sup></i><label for="message"></label></label>
            </a> </div>
-           <div class="notifications" style="margin-left: 40px;">
-            <a href="notification.html">
-            <label class="note-span">
-                <i class="fas fa-globe-africa note" id="note"><sup>3</sup></i><label for="note"></label></label>
-         </a> </div>
+
+           <div class="uk-inline" style="margin-left: 40px;">
+            <button class="uk-button uk-button-default" type="button"  style=" border-radius: 50%; padding: 0; border-width: 0;">
+              <div class="notifications" >
+                <a href="notification.html">
+                <label class="note-span">
+                    <i class="fas fa-globe-africa note" id="note"><sup>3</sup></i><label for="note"></label></label>
+             </a> </div>
+            </button>
+            <div uk-dropdown="mode: click" class="uk-dropdownnote" style="width: 300px;">
+              <div class="note-dropdown">
+                <h6>Notification <span>6</span></h6>
+                <div class="note-payment">
+                  <div class="note-flex">
+                    <div class="img">
+                      <img src="../../images/Palestine_FA.png" alt="image">
+                    </div>
+                    <div class="info">
+                      <p style="position: relative; top: 20px;"><span class="note-name">PFAMS</span> sent <span class="note-money">100$</span> </p>
+                      <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="note-payment">
+                  <div class="note-flex">
+                    <div class="img">
+                      <img src="../../images/Palestine_FA.png" alt="image">
+                    </div>
+                    <div class="info">
+                      <p style="position: relative; top: 20px;"><span class="note-name">PFAMS</span> add Players </p>
+                      <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="note-payment">
+                  <div class="note-flex">
+                    <div class="img">
+                      <img src="../../images/Palestine_FA.png" alt="image">
+                    </div>
+                    <div class="info">
+                      <p style="position: relative; top: 20px;"><span class="note-name">PFAMS</span> add Matches </p>
+                      <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="note-payment">
+                  <div class="note-flex">
+                    <div class="img">
+                      <img src="../../images/Palestine_FA.png" alt="image">
+                    </div>
+                    <div class="info">
+                      <p style="position: relative; top: 20px;"><span class="note-name">PFAMS</span>add judgment</p>
+                      <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="note-payment">
+                  <div class="note-flex">
+                    <div class="img">
+                      <img src="../../images/Palestine_FA.png" alt="image">
+                    </div>
+                    <div class="info">
+                      <p style="position: relative; top: 20px;"><span class="note-name">PFAMS</span> add law  </p>
+                      <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="note-payment">
+                  <div class="note-flex">
+                    <div class="img">
+                      <img src="../../images/Palestine_FA.png" alt="image">
+                    </div>
+                    <div class="info">
+                      <p style="position: relative; top: 20px;"><span class="note-name">PFAMS</span>  approve your reqest</p>
+                      <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="note-payment">
+                  <div class="note-flex">
+                    <div class="img">
+                      <img src="../../images/Palestine_FA.png" alt="image">
+                    </div>
+                    <div class="info">
+                      <p style="position: relative; top: 20px;"><span class="note-name">PFAMS</span>  reject your reqest</p>
+                      <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                    </div>
+                  </div>
+                </div>
+               
+               
+
+
+                <div class="note-matche"></div>
+                <div class="note-law"></div>
+                <div class="note-gudj"></div>
+                <div class="note-approve"></div>
+                <div class="note-reject"></div>
+              </div>
+            </div>
+        </div>
+
+
+   
           </div>
          
         </nav>
       </header>
 
-      <div class="dashboard-view" style="position:relative; top: 50px;">
+      <div class="dashboard-view" style="position:relative; top: 100px;">
 
       </div>
     </div>
@@ -84,7 +183,6 @@
               <li class="profile-link">Edit Profile</li>
               <li class="player-link">Players</li>
               <li class="matches-link">Matches</li>
-              <li class="note-link">Notifications</li>
               <li class="payment-link">Payments</li>
             </ul>
         </div>

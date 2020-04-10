@@ -42,17 +42,113 @@
         <!--JS Files-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css"></script>
-    <div class="dashboard-page">
-      <header>
-        <nav style="position:fixed ; width: 100%; z-index: 1;" >
-          <div class="menu" >
-            <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-reveal"><i class="fas fa-bars"></i> Menu</button>
-          </div>
-          <div class="messages">
-            <a href="massages.html">
-            <label class="message-span">
-                <i class="fas fa-envelope message" id="message"><sup>3</sup></i><label for="message"></label></label>
-         </a> </div>
+        <div class="dashboard-page">
+          <header>
+            <nav style="position:fixed ; width: 100%; z-index: 1;">
+              <div class="menu">
+                <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-reveal"><i class="fas fa-bars"></i> Menu</button>
+              </div>
+    
+              <div class="note-mess">
+                <div class="messages">
+                  <a href="massages.html">
+                      <label class="message-span">
+                      <i class="fas fa-envelope message" id="message"><sup>3</sup></i><label for="message"></label></label>
+                  </a> 
+                </div>
+
+
+         
+         <div class="uk-inline" style="margin-left: 40px;">
+          <button class="uk-button uk-button-default" type="button"  style=" border-radius: 50%; padding: 0; border-width: 0;">
+            <div class="notifications" >
+              <a href="notification.html">
+              <label class="note-span">
+                  <i class="fas fa-globe-africa note" id="note"><sup>3</sup></i><label for="note"></label></label>
+           </a> </div>
+          </button>
+          <div uk-dropdown="mode: click" class="uk-dropdownnote" style="width: 300px;">
+            <div class="note-dropdown">
+              <h6>Notification <span>6</span></h6>
+              <div class="note-payment">
+                <div class="note-flex">
+                  <div class="img">
+                    <img src="../../images/Palestine_FA.png" alt="image">
+                  </div>
+                  <div class="info">
+                    <p style="position: relative; top: 20px;"><span class="note-name">PFAMS</span> sent <span class="note-money">100$</span> </p>
+                    <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="note-payment">
+                <div class="note-flex">
+                  <div class="img">
+                    <img src="../../images/logo.jfif" alt="image">
+                  </div>
+                  <div class="info">
+                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span> add Players </p>
+                    <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="note-payment">
+                <div class="note-flex">
+                  <div class="img">
+                    <img src="../../images/logo.jfif" alt="image">
+                  </div>
+                  <div class="info">
+                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span> add Matches </p>
+                    <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="note-payment">
+                <div class="note-flex">
+                  <div class="img">
+                    <img src="../../images/logo.jfif" alt="image">
+                  </div>
+                  <div class="info">
+                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span>add judgment</p>
+                    <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="note-payment">
+                <div class="note-flex">
+                  <div class="img">
+                    <img src="../../images/logo.jfif" alt="image">
+                  </div>
+                  <div class="info">
+                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span> add law  </p>
+                    <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="note-payment">
+                <div class="note-flex">
+                  <div class="img">
+                    <img src="../../images/logo.jfif" alt="image">
+                  </div>
+                  <div class="info">
+                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span>  approve your reqest</p>
+                    <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="note-payment">
+                <div class="note-flex">
+                  <div class="img">
+                    <img src="../../images/logo.jfif" alt="image">
+                  </div>
+                  <div class="info">
+                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span>  reject your reqest</p>
+                    <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
+                  </div>
+                </div>
+              </div>
+             
+         
         </nav>
       </header>
 
@@ -76,7 +172,6 @@
               <li class="player-link">Players</li>
               <li class="matches-link">Matches</li>
               <li class="laws-link">Laws</li>
-              <li class="note-link">Notifications</li>
               <li class="jug-link">Jugments</li>
               <li class="payment-link">Payments</li>
             </ul>
