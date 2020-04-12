@@ -85,3 +85,27 @@ html {
   color: #fff;
   box-shadow: 1px 1px 10px 1px #009ef7;
 }
+
+table tr td img {
+  width: 50px;
+  height: 50px;
+}
+
+table tr td i {
+  padding: 0 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+table tr td i:nth-child(1):hover {
+  color: dodgerblue;
+}
+
+table tr td i:nth-child(2):hover {
+  color: orangered;
+}
+
+table tr td i:nth-child(3):hover {
+  color: red;
+}
