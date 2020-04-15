@@ -30,28 +30,6 @@
   </head>
   <body>
     <div class="page" style="padding-top: 50px;">
-      <h1>Laws</h1>
-      <form>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12">
-              <input type="text" name="" id="" placeholder="law title" />
-            </div>
-            <div class="col-md-6 col-sm-12 col-xs-12">
-              <input type="number" placeholder="law number" />
-            </div>
-            <div class="col-sm-12 col-xs-12">
-              <textarea
-                name=""
-                id=""
-                placeholder="law description..."
-              ></textarea>
-            </div>
-            <button type="submit">Add Law</button>
-          </div>
-        </div>
-      </form>
-
       <h1>Laws List</h1>
       <div class="laws_List">
         <ul>
@@ -65,12 +43,6 @@
                   style="color: rgb(78, 78, 255);"
                   ><i class="fa fa-info-circle"></i>
                 </span>
-                <span title="Edit" uk-toggle="target: #modal-edit"
-                  ><i class="fas fa-edit"></i
-                ></span>
-                <span title="Delete" uk-toggle="target: #modal-delete"
-                  ><i class="fas fa-trash-alt"></i
-                ></span>
               </div>
             </div>
           </li>
@@ -84,12 +56,6 @@
                   style="color: rgb(78, 78, 255);"
                   ><i class="fa fa-info-circle"></i>
                 </span>
-                <span title="Edit" uk-toggle="target: #modal-edit"
-                  ><i class="fas fa-edit"></i
-                ></span>
-                <span title="Delete" uk-toggle="target: #modal-delete"
-                  ><i class="fas fa-trash-alt"></i
-                ></span>
               </div>
             </div>
           </li>
@@ -103,12 +69,6 @@
                   style="color: rgb(78, 78, 255);"
                   ><i class="fa fa-info-circle"></i>
                 </span>
-                <span title="Edit" uk-toggle="target: #modal-edit"
-                  ><i class="fas fa-edit"></i
-                ></span>
-                <span title="Delete" uk-toggle="target: #modal-delete"
-                  ><i class="fas fa-trash-alt"></i
-                ></span>
               </div>
             </div>
           </li>
@@ -117,25 +77,6 @@
     </div>
 
     <!--Modals-->
-
-    <!--delete Modal-->
-    <div id="modal-delete" uk-modal>
-      <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title">Delete</h2>
-        <p>Are you sure you want to delete it?</p>
-        <p class="uk-text-right">
-          <button
-            class="uk-button uk-button-default uk-modal-close"
-            type="button"
-          >
-            Cancel
-          </button>
-          <button class="uk-button uk-button-danger" type="button">
-            Delete
-          </button>
-        </p>
-      </div>
-    </div>
 
     <!--info modal-->
     <div id="modal-info" uk-modal>

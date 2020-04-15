@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="../../css/uikit-rtl.min.css" />
     <link rel="stylesheet" href="../../css/uikit.min.css" />
     <link rel="stylesheet" href="../../css/players.css" />
+    <link rel="stylesheet" href="../../css/club.css" />
   </head>
   <body>
     <div class="club-page">
@@ -39,7 +40,9 @@
           <div class="row">
             <div class="col-md-6 colsm-12 col-xs-12">
               <div class="add">
-                <button><i class="fas fa-user-plus"></i> Add Player</button>
+                <button href="#modal-add" uk-toggle>
+                  <i class="fas fa-user-plus"></i> Add Player
+                </button>
               </div>
             </div>
 
@@ -71,10 +74,19 @@
                 <button type="button" class="btn btn-primary">
                   <i class="fa fa-info-circle"></i> Info
                 </button>
-                <button type="button" class="btn btn-secondary">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  href="#modal-edit"
+                  uk-toggle
+                >
                   <i class="fa fa-edit"></i> Edit
                 </button>
-                <button type="button" class="btn btn-danger">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  uk-toggle="target: #modal-delete"
+                >
                   <i class="fa fa-trash"></i> Delete
                 </button>
               </div>
@@ -97,10 +109,19 @@
                 <button type="button" class="btn btn-primary">
                   <i class="fa fa-info-circle"></i> Info
                 </button>
-                <button type="button" class="btn btn-secondary">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  href="#modal-edit"
+                  uk-toggle
+                >
                   <i class="fa fa-edit"></i> Edit
                 </button>
-                <button type="button" class="btn btn-danger">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  uk-toggle="target: #modal-delete"
+                >
                   <i class="fa fa-trash"></i> Delete
                 </button>
               </div>
@@ -123,7 +144,12 @@
                 <button type="button" class="btn btn-primary">
                   <i class="fa fa-info-circle"></i> Info
                 </button>
-                <button type="button" class="btn btn-secondary">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  href="#modal-edit"
+                  uk-toggle
+                >
                   <i class="fa fa-edit"></i> Edit
                 </button>
                 <button
@@ -160,8 +186,131 @@
         </p>
       </div>
     </div>
+
     <!--edit Modal-->
 
+    <div id="modal-edit" class="uk-modal-full" uk-modal>
+      <div class="uk-modal-dialog">
+        <button
+          class="uk-modal-close-full uk-close-large"
+          type="button"
+          uk-close
+        ></button>
+        <div
+          class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
+          uk-grid
+        >
+          <div
+            class="uk-background-cover"
+            style="background-image: url('../../images/editbg.jpg');"
+            uk-height-viewport
+          ></div>
+          <div class="uk-padding-large">
+            <h1>Edit player</h1>
+            <form>
+              <input type="text" placeholder="player name" />
+              <input type="text" placeholder="Player shirt number" />
+
+              <input type="text" placeholder="The current team" />
+              <input type="text" placeholder="The former team" />
+              <input type="text" placeholder="The parent team" />
+
+              <input type="number" placeholder="phone number" />
+              <input type="text" placeholder="player frome" />
+              <input type="text" placeholder="salary" />
+              <input type="text" placeholder="phone number" />
+              <input type="number" placeholder=" Number of goals scored" />
+              <input type="number" placeholder="number of red cards" />
+              <input type="number" placeholder="number of yellow cards" />
+              <input type="text" placeholder="center" />
+              <input type="text" placeholder="other center" />
+              <div class="js-upload" uk-form-custom>
+                <input type="file" />
+                <button
+                  class="uk-button uk-button-default"
+                  type="button"
+                  tabindex="-1"
+                >
+                  id Card
+                </button>
+              </div>
+              <div class="js-upload" uk-form-custom>
+                <input type="file" />
+                <button
+                  class="uk-button uk-button-default"
+                  type="button"
+                  tabindex="-1"
+                >
+                  Player resignation photo
+                </button>
+              </div>
+              <div><input type="submit" value="Edit" /></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal add-->
+
+    <div id="modal-add" class="uk-modal-full" uk-modal>
+      <div class="uk-modal-dialog">
+        <button
+          class="uk-modal-close-full uk-close-large"
+          type="button"
+          uk-close
+        ></button>
+        <div
+          class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
+          uk-grid
+        >
+          <div
+            class="uk-background-cover"
+            style="background-image: url('../../images/addbg.jpg');"
+            uk-height-viewport
+          ></div>
+          <div class="uk-padding-large">
+            <h1>Add player</h1>
+            <form>
+              <input type="text" placeholder="player name" />
+              <input type="text" placeholder="Player shirt number" />
+
+              <input type="text" placeholder="The current team" />
+              <input type="text" placeholder="The former team" />
+              <input type="text" placeholder="The parent team" />
+
+              <input type="number" placeholder="phone number" />
+              <input type="text" placeholder="player frome" />
+              <input type="text" placeholder="salary" />
+              <input type="text" placeholder="phone number" />
+              <input type="number" placeholder=" Number of goals scored" />
+              <input type="number" placeholder="number of red cards" />
+              <input type="number" placeholder="number of yellow cards" />
+              <input type="text" placeholder="center" />
+              <input type="text" placeholder="other center" />
+
+              <input
+                type="file"
+                placeholder="ID card"
+                id="file1"
+                style="width: 25%;"
+              />
+              <label for="file1">ID card</label>
+
+              <input
+                type="file"
+                placeholder="Player's resignation"
+                id="file2"
+                style="width: 25%;"
+              />
+              <label for="file2">Player's resignation</label>
+
+              <div><input type="submit" value="Add" /></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--Js files-->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

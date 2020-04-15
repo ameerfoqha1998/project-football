@@ -70,13 +70,13 @@
           <div uk-dropdown="mode: click" class="uk-dropdownnote" style="width: 300px;">
             <div class="note-dropdown">
               <h6>Notification <span>6</span></h6>
-              <div class="note-payment">
+              <div class="note-payment" >
                 <div class="note-flex">
                   <div class="img">
-                    <img src="../../images/Palestine_FA.png" alt="image">
+                    <img src="../../images/logo.jfif" alt="image">
                   </div>
                   <div class="info">
-                    <p style="position: relative; top: 20px;"><span class="note-name">PFAMS</span> sent <span class="note-money">100$</span> </p>
+                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span> sent <span class="note-money">100$</span> </p>
                     <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
                   </div>
                 </div>
@@ -92,62 +92,19 @@
                   </div>
                 </div>
               </div>
-              <div class="note-payment">
+
+              <div class="note-payment" uk-toggle="target: #modal-view-info-club">
                 <div class="note-flex">
                   <div class="img">
                     <img src="../../images/logo.jfif" alt="image">
                   </div>
                   <div class="info">
-                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span> add Matches </p>
+                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span> Edit Prifile </p>
                     <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
                   </div>
                 </div>
               </div>
-              <div class="note-payment">
-                <div class="note-flex">
-                  <div class="img">
-                    <img src="../../images/logo.jfif" alt="image">
-                  </div>
-                  <div class="info">
-                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span>add judgment</p>
-                    <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="note-payment">
-                <div class="note-flex">
-                  <div class="img">
-                    <img src="../../images/logo.jfif" alt="image">
-                  </div>
-                  <div class="info">
-                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span> add law  </p>
-                    <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="note-payment">
-                <div class="note-flex">
-                  <div class="img">
-                    <img src="../../images/logo.jfif" alt="image">
-                  </div>
-                  <div class="info">
-                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span>  approve your reqest</p>
-                    <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
-                  </div>
-                </div>
-              </div>
-              <div class="note-payment">
-                <div class="note-flex">
-                  <div class="img">
-                    <img src="../../images/logo.jfif" alt="image">
-                  </div>
-                  <div class="info">
-                    <p style="position: relative; top: 20px;"><span class="note-name">Shweikeh Club</span>  reject your reqest</p>
-                    <p><span class="time"><i class="fas fa-clock"></i> 2:20PM </span></p>
-                  </div>
-                </div>
-              </div>
-             
+
          
         </nav>
       </header>
@@ -158,23 +115,59 @@
     </div>
   <!--modal-->
 
-   <!--view innfo-->
+   <!--view innfo add player-->
    <div id="modal-view-info" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+      <h2 class="uk-modal-title">club Informations</h2>
+      <div class="uk-child-width-expand@s" uk-grid>
+        <div>
+          <div>
+            <img src="../../images/20180730_205141_4358.jpg" alt="image" style="border-radius: 50%; width: 150px; height: 150px"/>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>player name : <span style="color: aqua;"> Ameer Foqha</span></p>
+            <p> ID card : </p>
+            <img src="../../images/riad.png" alt="id card" width="40%" height="30%">
+
+          </div>
+        </div>
+      </div>
+      <p class="uk-text-right">
+        <button
+          class="uk-button uk-button-primary uk-modal-close"
+          type="button"
+        >
+          Approve
+        </button>
+        <button class="uk-button uk-button-danger" type="button">
+          Reject
+        </button>
+      </p>
+    </div>
+  </div> 
+
+  <!--view innfo add club-->
+  <div id="modal-view-info-club" uk-modal>
     <div class="uk-modal-dialog uk-modal-body">
       <h2 class="uk-modal-title">player Informations</h2>
       <div class="uk-child-width-expand@s" uk-grid>
         <div>
           <div>
-            <img src="../../images/player.jpg" alt="image" style="border-radius: 50%; width: 150px; height: 150px"/>
+            <img src="../../images/logo.jfif" alt="image" style="border-radius: 50%; width: 150px; height: 150px"/>
           </div>
         </div>
         <div>
           <div>
-            <p>this is</p>
-            <p>this is</p>
-            <p>this is</p>
-            <p>this is</p>
-            <p>this is</p>
+            <p>club name : <span style="color: aqua;">Shweikeh</span></p>
+            <p>coach's name : <span style="color: aqua;">Sabbah sabbah</span></p>
+            <p>president's name : <span style="color: aqua;">Maher Azizeh</span></p>
+            <p>club class : <span style="color: aqua;">a</span></p>
+            <p>player number : <span style="color: aqua;">22</span></p>
+            <p>club place : <span style="color: aqua;">Shweikeh</span></p>
+            <p>phone number  : <span style="color: aqua;">0598547120</span></p>
+
           </div>
         </div>
       </div>

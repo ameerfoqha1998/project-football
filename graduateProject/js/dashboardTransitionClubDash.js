@@ -12,6 +12,11 @@ $(document).ready(function () {
   $(".matches-link").click(function () {
     $(".dashboard-view").load("matches.html");
   });
+
+  $(".laws-link").click(function () {
+    $(".dashboard-view").load("law.html");
+  });
+
   $(".jug-link").click(function () {
     $(".dashboard-view").load("judgment.html");
   });
