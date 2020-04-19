@@ -40,7 +40,7 @@
           <div class="row">
             <div class="col-md-6 colsm-12 col-xs-12">
               <div class="add">
-                <button href="#modal-add" uk-toggle>
+                <button href="#modal-add-pl" uk-toggle>
                   <i class="fas fa-user-plus"></i> Add Player
                 </button>
               </div>
@@ -71,13 +71,17 @@
                 <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
               </div>
               <div class="buttons">
-                <button type="button" class="btn btn-primary">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  uk-toggle="target: #modal-view-info-player"
+                >
                   <i class="fa fa-info-circle"></i> Info
                 </button>
                 <button
                   type="button"
                   class="btn btn-secondary"
-                  href="#modal-edit"
+                  href="#modal-edit-pl"
                   uk-toggle
                 >
                   <i class="fa fa-edit"></i> Edit
@@ -106,13 +110,17 @@
                 <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
               </div>
               <div class="buttons">
-                <button type="button" class="btn btn-primary">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  uk-toggle="target: #modal-view-info-player"
+                >
                   <i class="fa fa-info-circle"></i> Info
                 </button>
                 <button
                   type="button"
                   class="btn btn-secondary"
-                  href="#modal-edit"
+                  href="#modal-edit-pl"
                   uk-toggle
                 >
                   <i class="fa fa-edit"></i> Edit
@@ -141,13 +149,17 @@
                 <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
               </div>
               <div class="buttons">
-                <button type="button" class="btn btn-primary">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  uk-toggle="target: #modal-view-info-player"
+                >
                   <i class="fa fa-info-circle"></i> Info
                 </button>
                 <button
                   type="button"
                   class="btn btn-secondary"
-                  href="#modal-edit"
+                  href="#modal-edit-pl"
                   uk-toggle
                 >
                   <i class="fa fa-edit"></i> Edit
@@ -189,7 +201,7 @@
 
     <!--edit Modal-->
 
-    <div id="modal-edit" class="uk-modal-full" uk-modal>
+    <div id="modal-edit-pl" class="uk-modal-full" uk-modal>
       <div class="uk-modal-dialog">
         <button
           class="uk-modal-close-full uk-close-large"
@@ -251,9 +263,72 @@
       </div>
     </div>
 
+    <!--view innfo add player-->
+
+    <div id="modal-view-info-player" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">player Informations</h2>
+        <div class="uk-child-width-expand@s" uk-grid>
+          <div>
+            <div>
+              <img
+                src="../../images/20180730_205141_4358.jpg"
+                alt="image"
+                style="border-radius: 50%; width: 150px; height: 150px;"
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>Player shirt number: <span style="color: aqua;"> 12</span></p>
+              <p>
+                The current team : <span style="color: aqua;"> Shwaikah</span>
+              </p>
+              <p>
+                The former team : <span style="color: aqua;"> Shwaikah</span>
+              </p>
+              <p>
+                The parent team : <span style="color: aqua;"> Shwaikah</span>
+              </p>
+              <p>
+                phone number : <span style="color: aqua;"> 0598547120</span>
+              </p>
+              <p>player frome : <span style="color: aqua;"> Shwaikah</span></p>
+              <p>salary : <span style="color: aqua;"> 1000$</span></p>
+              <p>
+                Number of goals scored : <span style="color: aqua;"> 12</span>
+              </p>
+              <p>number of red cards : <span style="color: aqua;"> 0</span></p>
+              <p>
+                number of yellow cards : <span style="color: aqua;"> 2 </span>
+              </p>
+              <p>center : <span style="color: aqua;"> Right back </span></p>
+              <p>
+                other center : <span style="color: aqua;"> left back </span>
+              </p>
+              <p>ID card :</p>
+              <img
+                src="../../images/riad.png"
+                alt="id card"
+                width="40%"
+                height="30%"
+              />
+              <p>Player resignation photo :</p>
+              <img
+                src="../../images/Screenshot_20171130-210222.png"
+                alt=""
+                width="40%"
+                height="30%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--modal add-->
 
-    <div id="modal-add" class="uk-modal-full" uk-modal>
+    <div id="modal-add-pl" class="uk-modal-full" uk-modal>
       <div class="uk-modal-dialog">
         <button
           class="uk-modal-close-full uk-close-large"
@@ -289,21 +364,26 @@
               <input type="text" placeholder="center" />
               <input type="text" placeholder="other center" />
 
-              <input
-                type="file"
-                placeholder="ID card"
-                id="file1"
-                style="width: 25%;"
-              />
-              <label for="file1">ID card</label>
-
-              <input
-                type="file"
-                placeholder="Player's resignation"
-                id="file2"
-                style="width: 25%;"
-              />
-              <label for="file2">Player's resignation</label>
+              <div class="js-upload" uk-form-custom>
+                <input type="file" />
+                <button
+                  class="uk-button uk-button-default"
+                  type="button"
+                  tabindex="-1"
+                >
+                  id Card
+                </button>
+              </div>
+              <div class="js-upload" uk-form-custom>
+                <input type="file" />
+                <button
+                  class="uk-button uk-button-default"
+                  type="button"
+                  tabindex="-1"
+                >
+                  Player resignation photo
+                </button>
+              </div>
 
               <div><input type="submit" value="Add" /></div>
             </form>

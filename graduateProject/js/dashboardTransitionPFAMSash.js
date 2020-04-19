@@ -1,7 +1,8 @@
+/*global load*/
 $(document).ready(function () {
   $(".dashboard-view").load("club.html");
 
-  $(".club-link").click(function () {
+  $(".club-link").on("click", function () {
     $(".dashboard-view").load("club.html");
   });
 

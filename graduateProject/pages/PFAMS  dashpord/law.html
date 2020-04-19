@@ -65,7 +65,7 @@
                   style="color: rgb(78, 78, 255);"
                   ><i class="fa fa-info-circle"></i>
                 </span>
-                <span title="Edit" uk-toggle="target: #modal-edit"
+                <span title="Edit" uk-toggle="target: #modal-edit-law"
                   ><i class="fas fa-edit"></i
                 ></span>
                 <span title="Delete" uk-toggle="target: #modal-delete"
@@ -84,7 +84,7 @@
                   style="color: rgb(78, 78, 255);"
                   ><i class="fa fa-info-circle"></i>
                 </span>
-                <span title="Edit" uk-toggle="target: #modal-edit"
+                <span title="Edit" uk-toggle="target: #modal-edit-law"
                   ><i class="fas fa-edit"></i
                 ></span>
                 <span title="Delete" uk-toggle="target: #modal-delete"
@@ -103,7 +103,7 @@
                   style="color: rgb(78, 78, 255);"
                   ><i class="fa fa-info-circle"></i>
                 </span>
-                <span title="Edit" uk-toggle="target: #modal-edit"
+                <span title="Edit" uk-toggle="target: #modal-edit-law"
                   ><i class="fas fa-edit"></i
                 ></span>
                 <span title="Delete" uk-toggle="target: #modal-delete"
@@ -132,6 +132,47 @@
           </button>
           <button class="uk-button uk-button-danger" type="button">
             Delete
+          </button>
+        </p>
+      </div>
+    </div>
+    <!--edit modal-->
+    <div id="modal-edit-law" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Edit Law</h2>
+        <div>
+          <form action="">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <input type="text" name="" id="" placeholder="law title" />
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <input type="number" placeholder="law number" />
+                </div>
+                <div class="col-sm-12 col-xs-12">
+                  <textarea
+                    name=""
+                    id=""
+                    placeholder="law description..."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <p class="uk-text-right">
+          <button
+            class="uk-button uk-button-default uk-modal-close"
+            type="button"
+          >
+            Cancel
+          </button>
+          <button
+            class="uk-button uk-button-primary uk-modal-close"
+            type="button"
+          >
+            Save
           </button>
         </p>
       </div>

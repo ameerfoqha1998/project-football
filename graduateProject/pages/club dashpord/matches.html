@@ -33,11 +33,7 @@
   </head>
   <body>
     <div class="matches-page">
-      <div>
-        <button class="add" href="#modal-add" uk-toggle>
-          <i class="fas fa-plus"></i> Add Match
-        </button>
-      </div>
+     
 
       <table class="table table-striped">
         <thead>
@@ -49,7 +45,7 @@
             <th scope="col">Date</th>
             <th scope="col">Time</th>
             <th scope="col">Place</th>
-            <th scope="col">Options</th>
+            <th scope="col">info</th>
           </tr>
         </thead>
         <tbody>
@@ -62,9 +58,8 @@
             <td>09:45PM</td>
             <td>Tullkarm</td>
             <td>
-              <i class="fa fa-info-circle" uk-toggle="target: #modal-info"></i></i>
-              <i class="fa fa-edit" uk-toggle="target: #modal-edit"></i>
-              <i class="fa fa-trash" uk-toggle="target: #modal-delete"></i>
+              <i class="fa fa-info-circle" uk-toggle="target: #modal-info-match"></i></i>
+            
             </td>
           </tr>
           <tr>
@@ -76,13 +71,8 @@
             <td>09:45PM</td>
             <td>Tullkarm</td>
             <td>
-              <select>
-                <option value="info">Info</option>
-                <option value="edit">Edit</option>
-                <option value="delete" uk-toggle="target: #modal-delete"
-                  >Delete</option
-                >
-              </select>
+              <i class="fa fa-info-circle" uk-toggle="target: #modal-info-match"></i></i>
+           
             </td>
           </tr>
           <tr>
@@ -94,13 +84,8 @@
             <td>09:45PM</td>
             <td>Tullkarm</td>
             <td>
-              <select>
-                <option value="info">Info</option>
-                <option value="edit">Edit</option>
-                <option value="delete" uk-toggle="target: #modal-delete"
-                  >Delete</option
-                >
-              </select>
+              <i class="fa fa-info-circle" uk-toggle="target: #modal-info-match"></i></i>
+             
             </td>
           </tr>
         </tbody>
@@ -109,160 +94,57 @@
 
     <!--Modals-->
     <!--info Modal-->
-    <div id="modal-info" uk-modal>
+    <div id="modal-info-match" uk-modal>
       <div class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title">information</h2>
-       <div>
-         <!--write the code bb-->
-       </div>
+        <div class="uk-child-width-expand@s" uk-grid>
+          <div>
+            <div>
+              <img
+                src="../../images/barcelonaLogo.png"
+                alt="image"
+                style="border-radius: 50%; width: 150px; height: 150px;"/>
+                <p>club name : <span style="color: aqua;">Barsalona</span></p>
+            </div>
+            <div>
+              <br> <br>
+              <img
+                src="../../images/realmadredLoog.png"
+                alt="image"
+                style="border-radius: 50%; width: 150px; height: 150px;"/>
+                <p>club name : <span style="color: aqua;">Real Madred</span></p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>name of tournament : <span style="color: aqua;"> Champions League</span></p>
+              <p>time : <span style="color: aqua;"> 07:00 PM </span></p>
+              <p>date : <span style="color: aqua;"> 28/8/2020</span></p>
+              <p>match place : <span style="color: aqua;"> Martyr Jamal Ghanem Stadium</span></p>
+              <p>name judgment Arena : <span style="color: aqua;"> Dr.Eman</span></p>
+              <p>name judgment first line : <span style="color: aqua;"> M.shadi</span></p>
+              <p>name judgment second line : <span style="color: aqua;"> M.Bashar </span></p>
+              <p>name judgment clock : <span style="color: aqua;" > M.Hadi </span></p>
+              <p>name judgment observer : <span style="color: aqua;"> Dr.Hsan</span></p>
+              <p>first ruler name : <span style="color: aqua;"> Without an audience</span></p>
+              <p>second ruler name : <span style="color: aqua;"> null</span></p>
+              <p>third ruler name : <span style="color: aqua;"> null</span></p>
+              <p>forth ruler name : <span style="color: aqua;"> null</span></p>
+              <p>fifth ruler name : <span style="color: aqua;"> null</span></p>
+              
+              
+            </div>
+          </div>
+        </div>
       
       </div>
     </div>
 
-    <!--delete Modal-->
-    <div id="modal-delete" uk-modal>
-      <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title">Delete</h2>
-        <p>Are you sure you want to delete the match?</p>
-        <p class="uk-text-right">
-          <button
-            class="uk-button uk-button-default uk-modal-close"
-            type="button"
-          >
-            Cancel
-          </button>
-          <button class="uk-button uk-button-danger" type="button">
-            Delete
-          </button>
-        </p>
-      </div>
-    </div>
-    <!--edit Modal-->
+    
+   
 
-    <div id="modal-edit" class="uk-modal-full" uk-modal>
-      <div class="uk-modal-dialog">
-        <button
-          class="uk-modal-close-full uk-close-large"
-          type="button"
-          uk-close
-        ></button>
-        <div
-          class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
-          uk-grid
-        >
-          <div
-            class="uk-background-cover"
-            style="background-image: url('../../images/editbg.jpg');"
-            uk-height-viewport
-          ></div>
-          <div class="uk-padding-large">
-            <h1>Edit Match</h1>
-            <form>
-              <input type="text" placeholder="name of tournament" />
-              <input type="time" name="" id="" />
-              <input type="date" name="" id="" />
-              <input type="text" placeholder="match place" />
-              <div class="teams-comp">
-                <p>Teams Names</p>
-                <input type="text" placeholder="name first team" />
-                <input type="text" placeholder="name second team" />
-              </div>
-              <div class="teams-comp">
-                <p>judgment Names</p>
-                <input type="text" placeholder="name judgment Arena" />
-                <input type="text" placeholder="name judgment first line" />
-                <input type="text" placeholder="name judgment second line" />
-                <input type="text" placeholder="name judgment clock " />
-                <input type="text" placeholder="name judgment observer" />
-              </div>
-              <div class="rulers-names">
-                <p>Rulers Name</p>
-                <input type="text" placeholder="first ruler name" />
-                <input type="text" placeholder="second ruler name" />
-                <input type="text" placeholder="third ruler name" />
-                <input type="text" placeholder="forth ruler name" />
-                <input type="text" placeholder="fifth ruler name" />
-              </div>
-
-              <input type="submit" value="Edit" />
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--modal add-->
-
-    <div id="modal-add" class="uk-modal-full" uk-modal>
-      <div class="uk-modal-dialog">
-        <button
-          class="uk-modal-close-full uk-close-large"
-          type="button"
-          uk-close
-        ></button>
-        <div
-          class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
-          uk-grid
-        >
-          <div
-            class="uk-background-cover"
-            style="background-image: url('../../images/addbg.jpg');"
-            uk-height-viewport
-          ></div>
-          <div class="uk-padding-large">
-            <h1>Add Match</h1>
-            <form>
-              <input type="text" placeholder="name of tournament" />
-              <input type="time" name="" id="" />
-              <input type="date" name="" id="" />
-              <input type="text" placeholder="match place" />
-              <div class="teams-comp">
-                <p>Teams Names</p>
-                <input type="text" placeholder="name first team" />
-                <input type="text" placeholder="name second team" />
-              </div>
-              <div class="teams-comp">
-                <p>judgment Names</p>
-                <input type="text" placeholder="name judgment Arena" />
-                <input type="text" placeholder="name judgment first line" />
-                <input type="text" placeholder="name judgment second line" />
-                <input type="text" placeholder="name judgment clock " />
-                <input type="text" placeholder="name judgment observer" />
-              </div>
-              <div class="rulers-names">
-                <p>Rulers Name</p>
-                <input type="text" placeholder="first ruler name" />
-                <input type="text" placeholder="second ruler name" />
-                <input type="text" placeholder="third ruler name" />
-                <input type="text" placeholder="forth ruler name" />
-                <input type="text" placeholder="fifth ruler name" />
-              </div>
-
-              <input type="submit" value="Add" />
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-       <!--delete Modal-->
-       <div id="modal-delete" uk-modal>
-        <div class="uk-modal-dialog uk-modal-body">
-          <h2 class="uk-modal-title">Delete</h2>
-          <p>Are you sure you want to delete this match?</p>
-          <p class="uk-text-right">
-            <button
-              class="uk-button uk-button-default uk-modal-close"
-              type="button"
-            >
-              Cancel
-            </button>
-            <button class="uk-button uk-button-danger" type="button">
-              Delete
-            </button>
-          </p>
-        </div>
-      </div>
+  
+      
      
     <!--Js files-->
     <script

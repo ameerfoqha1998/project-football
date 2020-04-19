@@ -69,13 +69,26 @@
                 <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
               </div>
               <div class="buttons">
-                <button type="button" class="btn btn-primary">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  uk-toggle="target: #modal-view-info-club-1"
+                >
                   <i class="fa fa-info-circle"></i> Info
                 </button>
-                <button type="button" class="btn btn-secondary" href="#modal-edit" uk-toggle>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  href="#modal-edit"
+                  uk-toggle
+                >
                   <i class="fa fa-edit"></i> Edit
                 </button>
-                <button type="button" class="btn btn-danger" uk-toggle="target: #modal-delete">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  uk-toggle="target: #modal-delete"
+                >
                   <i class="fa fa-trash"></i> Delete
                 </button>
               </div>
@@ -95,13 +108,26 @@
                 <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
               </div>
               <div class="buttons">
-                <button type="button" class="btn btn-primary">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  uk-toggle="target: #modal-view-info-club-1"
+                >
                   <i class="fa fa-info-circle"></i> Info
                 </button>
-                <button type="button" class="btn btn-secondary" href="#modal-edit" uk-toggle>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  href="#modal-edit"
+                  uk-toggle
+                >
                   <i class="fa fa-edit"></i> Edit
                 </button>
-                <button type="button" class="btn btn-danger" uk-toggle="target: #modal-delete">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  uk-toggle="target: #modal-delete"
+                >
                   <i class="fa fa-trash"></i> Delete
                 </button>
               </div>
@@ -121,7 +147,11 @@
                 <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
               </div>
               <div class="buttons">
-                <button type="button" class="btn btn-primary">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  uk-toggle="target: #modal-view-info-club-1"
+                >
                   <i class="fa fa-info-circle"></i> Info
                 </button>
                 <button class="btn btn-secondary" href="#modal-edit" uk-toggle>
@@ -198,6 +228,40 @@
       </div>
     </div>
 
+    <!--view innfo add club-->
+    <div id="modal-view-info-club-1" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">Club Informations</h2>
+        <div class="uk-child-width-expand@s" uk-grid>
+          <div>
+            <div>
+              <img
+                src="../../images/logo.jfif"
+                alt="image"
+                style="border-radius: 50%; width: 150px; height: 150px;"
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>club name : <span style="color: aqua;">Shweikeh</span></p>
+              <p>
+                coach's name : <span style="color: aqua;">Sabbah sabbah</span>
+              </p>
+              <p>
+                president's name :
+                <span style="color: aqua;">Maher Azizeh</span>
+              </p>
+              <p>club class : <span style="color: aqua;">a</span></p>
+              <p>player number : <span style="color: aqua;">22</span></p>
+              <p>club place : <span style="color: aqua;">Shweikeh</span></p>
+              <p>phone number : <span style="color: aqua;">0598547120</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--modal add-->
 
     <div id="modal-add" class="uk-modal-full" uk-modal>
@@ -220,8 +284,8 @@
             <h1>Add Club</h1>
             <form>
               <input type="text" placeholder="club name" />
-              <input type="text" placeholder="Enter user name"/>
-              <input type="password" placeholder ="password"/>
+              <input type="text" placeholder="Enter user name" />
+              <input type="password" placeholder="password" />
               <input type="text" placeholder="coach's name" />
 
               <input type="text" placeholder="Club president's name" />

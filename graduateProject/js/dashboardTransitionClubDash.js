@@ -1,3 +1,4 @@
+/*global load*/
 $(document).ready(function () {
   $(".dashboard-view").load("profile.html");
 

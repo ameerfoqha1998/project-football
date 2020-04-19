@@ -30,7 +30,7 @@
     />
     <link rel="stylesheet" href="../../css/uikit-rtl.min.css" />
     <link rel="stylesheet" href="../../css/uikit.min.css" />
-    <link rel="stylesheet" href="../../css/club.css" />
+    <link rel="stylesheet" href="../../css/jud.css" />
   </head>
   <body>
     <div class="club-page">
@@ -63,72 +63,94 @@
               <h3>عماد زهورات</h3>
               <div class="info">
                 <span>
-                  <i class="fas fa-futbol"></i> Degree:<span class="No-players"
+                  <i class="fas fa-futbol"></i> Digree:<span class="No-players"
                     >A</span
                   ></span
                 >
                 <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
               </div>
               <div class="buttons">
-                <button type="button" class="btn btn-primary">
-                  <i class="fa fa-info-circle"></i> Info
-                </button>
-                <button type="button" class="btn btn-secondary">
-                  <i class="fa fa-edit"></i> Edit
-                </button>
-                <button type="button" class="btn btn-danger">
-                  <i class="fa fa-trash"></i> Delete
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <div class="card">
-              <img src="../../images/judgment.jpg" />
-              <h3>عماد زهورات</h3>
-              <div class="info">
-                <span>
-                  <i class="fas fa-futbol"></i> Degree:<span class="No-players"
-                    >A</span
-                  ></span
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  uk-toggle="target: #modal-view-info-jud"
                 >
-                <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
-              </div>
-              <div class="buttons">
-                <button type="button" class="btn btn-primary">
-                  <i class="fa fa-info-circle"></i> Info
-                </button>
-                <button type="button" class="btn btn-secondary">
-                  <i class="fa fa-edit"></i> Edit
-                </button>
-                <button type="button" class="btn btn-danger">
-                  <i class="fa fa-trash"></i> Delete
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <div class="card">
-              <img src="../../images/judgment.jpg" />
-              <h3>عماد زهورات</h3>
-              <div class="info">
-                <span>
-                  <i class="fas fa-futbol"></i> Degree:<span class="No-players"
-                    >A</span
-                  ></span
-                >
-                <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
-              </div>
-              <div class="buttons">
-                <button type="button" class="btn btn-primary">
                   <i class="fa fa-info-circle"></i> Info
                 </button>
                 <button
                   type="button"
                   class="btn btn-secondary"
-                  href="#modal-edit"
+                  href="#modal-edit-jud"
+                  uk-toggle
+                >
+                  <i class="fa fa-edit"></i> Edit
+                </button>
+                <button type="button" class="btn btn-danger">
+                  <i class="fa fa-trash"></i> Delete
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="card">
+              <img src="../../images/judgment.jpg" />
+              <h3>عماد زهورات</h3>
+              <div class="info">
+                <span>
+                  <i class="fas fa-futbol"></i> Digree:<span class="No-players"
+                    >A</span
+                  ></span
+                >
+                <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
+              </div>
+              <div class="buttons">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  uk-toggle="target: #modal-view-info-jud"
+                >
+                  <i class="fa fa-info-circle"></i> Info
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  href="#modal-edit-jud"
+                  uk-toggle
+                >
+                  <i class="fa fa-edit"></i> Edit
+                </button>
+                <button type="button" class="btn btn-danger">
+                  <i class="fa fa-trash"></i> Delete
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="card">
+              <img src="../../images/judgment.jpg" />
+              <h3>عماد زهورات</h3>
+              <div class="info">
+                <span>
+                  <i class="fas fa-futbol"></i> Digree:<span class="No-players"
+                    >A</span
+                  ></span
+                >
+                <span><i class="fa fa-phone"></i> +(970) 59 324 4400</span>
+              </div>
+              <div class="buttons">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  uk-toggle="target: #modal-view-info-jud"
+                >
+                  <i class="fa fa-info-circle"></i> Info
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  href="#modal-edit-jud"
                   uk-toggle
                 >
                   <i class="fa fa-edit"></i> Edit
@@ -170,7 +192,7 @@
 
     <!--edit Modal-->
 
-    <div id="modal-edit" class="uk-modal-full" uk-modal>
+    <div id="modal-edit-jud" class="uk-modal-full" uk-modal>
       <div class="uk-modal-dialog">
         <button
           class="uk-modal-close-full uk-close-large"
@@ -181,22 +203,78 @@
           class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
           uk-grid
         >
-          <div
-            class="uk-background-cover"
-            style="background-image: url('../../images/foot.jpg);"
-            uk-height-viewport
-          ></div>
+          <div class="uk-background-cover" uk-height-viewport></div>
           <div class="uk-padding-large">
             <h1>Edit judgment</h1>
             <form>
               <input type="text" placeholder="judgment name" />
               <input type="text" placeholder="salary" />
-              <input type="file" placeholder="img id card" />
-              <input type="file" placeholder="judgment card image" />
               <input type="number" placeholder="The number of matches" />
               <input type="text" placeholder="Degree" />
-              <div><input type="submit" value="Edit" /></div>
+              <input type="tel" placeholder=" phone" />
+              <div class="js-upload" uk-form-custom>
+                <input type="file" />
+                <button
+                  class="uk-button uk-button-default"
+                  type="button"
+                  tabindex="-1"
+                >
+                  img id card
+                </button>
+              </div>
+              <br />
+              <div class="js-upload" uk-form-custom>
+                <input type="file" />
+                <button
+                  class="uk-button uk-button-default"
+                  type="button"
+                  tabindex="-1"
+                >
+                  judgment card image
+                </button>
+              </div>
+              <div><input type="submit" value="Add" /></div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--view innfo add jud-->
+
+    <div id="modal-view-info-jud" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">judgment Informations</h2>
+        <div class="uk-child-width-expand@s" uk-grid>
+          <div>
+            <div>
+              <img
+                src="../../images/judgment.jpg"
+                alt="image"
+                style="border-radius: 50%; width: 150px; height: 150px;"
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>
+                judgment name: <span style="color: aqua;"> Tariq Sabbah</span>
+              </p>
+              <p>salary : <span style="color: aqua;"> 1000$</span></p>
+              <p>number of matches : <span style="color: aqua;"> 54</span></p>
+              <p>digree : <span style="color: aqua;"> a </span></p>
+              <p>
+                phone number : <span style="color: aqua;"> 0598547120</span>
+              </p>
+
+              <p>judgment card image</p>
+              <img
+                src="../../images/riad.png"
+                alt=""
+                width="40%"
+                height="30%"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -215,20 +293,36 @@
           class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle"
           uk-grid
         >
-          <div
-            class="uk-background-cover"
-            style="background-image: url('./images/addbg.jpg');"
-            uk-height-viewport
-          ></div>
+          <div class="uk-background-cover" uk-height-viewport></div>
           <div class="uk-padding-large">
             <h1>Add judgment</h1>
             <form>
               <input type="text" placeholder="judgment name" />
               <input type="text" placeholder="salary" />
-              <input type="file" placeholder="img id card" />
-              <input type="file" placeholder="judgment card image" />
               <input type="number" placeholder="The number of matches" />
               <input type="text" placeholder="Degree" />
+              <input type="tel" placeholder=" phone" />
+              <div class="js-upload" uk-form-custom>
+                <input type="file" />
+                <button
+                  class="uk-button uk-button-default"
+                  type="button"
+                  tabindex="-1"
+                >
+                  img id card
+                </button>
+              </div>
+              <br />
+              <div class="js-upload" uk-form-custom>
+                <input type="file" />
+                <button
+                  class="uk-button uk-button-default"
+                  type="button"
+                  tabindex="-1"
+                >
+                  judgment card image
+                </button>
+              </div>
               <div><input type="submit" value="Add" /></div>
             </form>
           </div>

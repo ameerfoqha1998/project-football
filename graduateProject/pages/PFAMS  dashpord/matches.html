@@ -62,7 +62,7 @@
             <td>09:45PM</td>
             <td>Tullkarm</td>
             <td>
-              <i class="fa fa-info-circle" uk-toggle="target: #modal-info"></i></i>
+              <i class="fa fa-info-circle" uk-toggle="target: #modal-info-match"></i></i>
               <i class="fa fa-edit" uk-toggle="target: #modal-edit"></i>
               <i class="fa fa-trash" uk-toggle="target: #modal-delete"></i>
             </td>
@@ -76,13 +76,9 @@
             <td>09:45PM</td>
             <td>Tullkarm</td>
             <td>
-              <select>
-                <option value="info">Info</option>
-                <option value="edit">Edit</option>
-                <option value="delete" uk-toggle="target: #modal-delete"
-                  >Delete</option
-                >
-              </select>
+              <i class="fa fa-info-circle" uk-toggle="target: #modal-info-match"></i></i>
+              <i class="fa fa-edit" uk-toggle="target: #modal-edit"></i>
+              <i class="fa fa-trash" uk-toggle="target: #modal-delete"></i>
             </td>
           </tr>
           <tr>
@@ -94,13 +90,9 @@
             <td>09:45PM</td>
             <td>Tullkarm</td>
             <td>
-              <select>
-                <option value="info">Info</option>
-                <option value="edit">Edit</option>
-                <option value="delete" uk-toggle="target: #modal-delete"
-                  >Delete</option
-                >
-              </select>
+              <i class="fa fa-info-circle" uk-toggle="target: #modal-info-match"></i></i>
+              <i class="fa fa-edit" uk-toggle="target: #modal-edit"></i>
+              <i class="fa fa-trash" uk-toggle="target: #modal-delete"></i>
             </td>
           </tr>
         </tbody>
@@ -109,34 +101,53 @@
 
     <!--Modals-->
     <!--info Modal-->
-    <div id="modal-info" uk-modal>
+    <div id="modal-info-match" uk-modal>
       <div class="uk-modal-dialog uk-modal-body">
         <h2 class="uk-modal-title">information</h2>
-       <div>
-         <!--write the code bb-->
-       </div>
+        <div class="uk-child-width-expand@s" uk-grid>
+          <div>
+            <div>
+              <img
+                src="../../images/barcelonaLogo.png"
+                alt="image"
+                style="border-radius: 50%; width: 150px; height: 150px;"/>
+                <p>club name : <span style="color: aqua;">Barsalona</span></p>
+            </div>
+            <div>
+              <br> <br>
+              <img
+                src="../../images/realmadredLoog.png"
+                alt="image"
+                style="border-radius: 50%; width: 150px; height: 150px;"/>
+                <p>club name : <span style="color: aqua;">Real Madred</span></p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>name of tournament : <span style="color: aqua;"> Champions League</span></p>
+              <p>time : <span style="color: aqua;"> 07:00 PM </span></p>
+              <p>date : <span style="color: aqua;"> 28/8/2020</span></p>
+              <p>match place : <span style="color: aqua;"> Martyr Jamal Ghanem Stadium</span></p>
+              <p>name judgment Arena : <span style="color: aqua;"> Dr.Eman</span></p>
+              <p>name judgment first line : <span style="color: aqua;"> M.shadi</span></p>
+              <p>name judgment second line : <span style="color: aqua;"> M.Bashar </span></p>
+              <p>name judgment clock : <span style="color: aqua;" > M.Hadi </span></p>
+              <p>name judgment observer : <span style="color: aqua;"> Dr.Hsan</span></p>
+              <p>first ruler name : <span style="color: aqua;"> Without an audience</span></p>
+              <p>second ruler name : <span style="color: aqua;"> null</span></p>
+              <p>third ruler name : <span style="color: aqua;"> null</span></p>
+              <p>forth ruler name : <span style="color: aqua;"> null</span></p>
+              <p>fifth ruler name : <span style="color: aqua;"> null</span></p>
+              
+              
+            </div>
+          </div>
+        </div>
       
       </div>
     </div>
 
-    <!--delete Modal-->
-    <div id="modal-delete" uk-modal>
-      <div class="uk-modal-dialog uk-modal-body">
-        <h2 class="uk-modal-title">Delete</h2>
-        <p>Are you sure you want to delete the match?</p>
-        <p class="uk-text-right">
-          <button
-            class="uk-button uk-button-default uk-modal-close"
-            type="button"
-          >
-            Cancel
-          </button>
-          <button class="uk-button uk-button-danger" type="button">
-            Delete
-          </button>
-        </p>
-      </div>
-    </div>
+    
     <!--edit Modal-->
 
     <div id="modal-edit" class="uk-modal-full" uk-modal>
